@@ -12,6 +12,11 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
+import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.Pattern;
+import jakarta.validation.constraints.Size;
 
 @Entity
 @Table(name="USER")
@@ -19,14 +24,26 @@ public class User {
            @Id
            @GeneratedValue(strategy = GenerationType.AUTO)
 	       private int id;
+           
+           @NotBlank(message = "Name field can't be empty")
+           @Size(min = 1, max = 15, message = "Name must be between 1-15 characters!!")
 	       private String name;
+           
 	       @Column(unique = true)
+	       @Email(regexp = "^[A-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$")
+	       @NotEmpty
 	       private String email;
-           private String password;
+	       
+	       @Pattern(regexp="^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[@$!%*?&])[A-Za-z\\d@$!%*?&]{8,10}$")
+	       private String password;
+	       
 	       private String role;
+	       
 	       @Column(length = 500)
 	       private String description;
+	       
 	       private boolean enabled;
+	       
 	       private String imageUrl;
 	       
 	       @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER, mappedBy = "user")
