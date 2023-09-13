@@ -1,0 +1,214 @@
+body {
+	background-color: rgb(0, 0, 0);
+}
+
+.login-body {
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(../Images/login-background.jpg);
+	background-size: cover;
+}
+
+.signup-body {
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(../Images/signup-background.jpg);
+	background-size: cover;
+}
+
+.about-body {
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(../Images/about-background.jpg);
+	background-size: cover;
+}
+
+.user-dashboard-body {
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(../Images/user-dashboard.jpg);
+	background-size: cover;
+}
+
+.user-profile-body {
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(../Images/user-profile-background.jpg);
+	background-size: cover;
+	color: rgb(0, 0, 0);
+}
+.forgot-password-body {
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(../Images/login-background.jpg);
+	background-size: cover;
+	color: rgb(0, 0, 0);
+}
+
+
+
+.top-margin {
+	margin-top: 20px;
+}
+
+.bg-primary {
+	background: #009688 !important;
+}
+
+.navbar-brand {
+	color: white;
+
+
+}
+
+.nav-link {
+	color: white;
+	justify-content: end;
+}
+
+.banner {
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(../Images/scm.jpg);
+	background-size: cover;
+}
+
+.color {
+	color: white;
+	text-align: center;
+	justify-content: center;
+	margin: 17%;
+	font-weight: bold;
+}
+
+.para {
+	color: white;
+	text-align: center;
+	justify-content: center;
+	font-family: cursive;
+	font-weight: normal;
+}
+
+.my-card {
+	padding: 20px;
+	background: rgb(116, 186, 186);
+}
+
+#login .container #login-row #login-column #login-box {
+	margin-top: 120px;
+	max-width: 600px;
+	height: 390px;
+	border: 1px solid rgb(128, 128, 128);
+	background-color: rgb(198, 198, 140);
+}
+
+#login .container #login-row #login-column #login-box #login-form {
+	padding: 20px;
+}
+
+#login .container #login-row #login-column #login-box #login-form #register-link {
+	margin-top: -85px;
+}
+
+/* Sidebar Style */
+
+
+@media only screen and (max-width: 600px) {
+
+	.sidebar {
+		display: none;
+		width: 80% !important;
+		background: white;
+		height: 100vh;
+		position: fixed;
+		padding-top: 20px;
+
+	}
+
+	.content {
+		margin-left: 0% !important;
+	}
+
+
+}
+
+.sidebar {
+	width: 18%;
+	background: white;
+	height: 100vh;
+	position: fixed;
+	padding-top: 45px;
+	z-index: 999999999999999999999999999999;
+
+}
+
+.sidebar a {
+
+	display: block;
+	width: 100%;
+	padding: 10px 25px;
+	text-decoration: none;
+	color: rgb(88, 88, 88);
+}
+
+.sidebar a:hover {
+	background: #e2e2e2;
+}
+
+.sidebar .divider {
+	height: 0.5px;
+	width: 100%;
+	background: #e2e2e2;
+	margin-top: 10px;
+}
+
+
+.content {
+	margin-left: 20%;
+}
+
+.sidebar .cross-btn {
+	position: absolute;
+	top: 0px;
+	right: 35px;
+	font-size: 30px;
+	cursor: pointer;
+}
+
+.item {
+	display: flex;
+	/* Use flexbox to align icon and text*/
+	align-items: center;
+	/* Vertically center icon and text */
+	margin-bottom: 5px;
+	/* Add margin to the bottom for spacing */
+}
+
+/* You can adjust the margin or padding values as needed */
+.item i {
+	margin-right: 5px;
+	/* Add margin to the right of the icon */
+}
+
+.active{
+	background: #009688;
+	color: white !important;
+}
+
+/* Search bar functionality */
+
+.search-container{
+	position: relative;
+	border: 0.5px solid rgb(192, 192, 192);
+}
+.search-result{
+	position: absolute;
+	background: white;
+	width: 100%;
+	padding: 10px;
+	border: 1px solid rgb(193, 193, 193);
+	display: none;
+}
+
+
+

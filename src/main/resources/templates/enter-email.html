@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="~{base::layout(~{::body})}">
+
+<head>
+	<meta charset="UTF-8" />
+	<title>Forgot Password</title>
+</head>
+
+<body class="forgot-password-body">
+
+		<div class="row" style="margin-left: 450px; margin-top: 200px;">
+			
+			<div class="col-md-6">
+				
+				<div class="card" style="background-color: rgb(236, 255, 255);">
+					<div class="card-body text-center">
+						<h3 class="mb-4">Enter Registered Email</h3>
+						<form th:action="@{/send-otp}" method="post">
+							
+							<!--Enter email field-->
+							<div class="form-group">
+								
+								<input name="email" type="email" class="form-control" placeholder="Enter registered email" required/>
+								
+							</div>
+							
+							
+							<div class="form-group text-center">							
+								
+								<button type="submit" class="btn btn-warning mt-2" style="color: black;">Send OTP</button>
+							
+							</div>
+							
+						
+						</form>
+						
+						 
+					</div>
+				</div>
+				
+			</div>
+			
+		</div>
+		
+	</div>
+
+
+</body>
+
+</html>
